@@ -244,7 +244,7 @@ success: colors.green.accent3,
 [ローディング](https://ja.nuxtjs.org/docs/2.x/features/loading)
 
 1. コンポーネントフォルダー配下に「LoadingBar.vue」を作成
-
+a
 ```js
 <template>
   <div>
