@@ -24,14 +24,14 @@
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200,
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["viewer"]
     }
   ],
   "platformErrorOverrides": [
     {
       "errorType": "Unauthenticated",
       "statusCode": "302",
-      "serve": "/.auth/login/google"
+      "serve": "/.auth/login/aad"
     }
   ],
   "platformErrorOverrides": [
