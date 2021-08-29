@@ -13,8 +13,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-title', content: 'かたののblog' },
+      // { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      // { name: 'apple-mobile-web-app-title', content: 'かたののblog' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -62,7 +62,18 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: 'blog',
+      lang: 'ja',
+      short_name: 'blog',
+      title: 'かたののblog',
+      'og:title': 'かたののblog',
+      description: 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
+      'og:description': 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
+      theme_color: '#212121',
+      background_color: '#212121'
+    },
+    meta: {
+      mobileAppIOS: true 
     }
   },
 
@@ -90,16 +101,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-  manifest: {
-    name: 'blog',
-    lang: 'ja',
-    short_name: 'blog',
-    title: 'かたののblog',
-    'og:title': 'かたののblog',
-    description: 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
-    'og:description': 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
-    theme_color: '#212121',
-    background_color: '#212121'
   },
 }
