@@ -88,5 +88,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  manifest: {
+    name: 'blog',
+    lang: 'ja',
+    short_name: 'blog',
+    title: 'かたののblog',
+    'og:title': 'かたののblog',
+    description: 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
+    'og:description': 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
+    theme_color: '#212121',
+    background_color: '#212121'
+  },
 }
