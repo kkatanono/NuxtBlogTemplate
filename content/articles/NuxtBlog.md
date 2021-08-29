@@ -56,7 +56,7 @@ WordPressのMongoDBに格納する情報をこのフォルダ―に配置する�
 
 1. contentフォルダーにマークダウンファイルを配置します。
 
-    content/hello.mdに初期ファイルが作成していますが、articlesフォルダ―を作成し、その中にMarkdownファイルを配置します
+    「content/hello.md」に初期ファイルが作成していますが、articlesフォルダ―を作成し、その中にMarkdownファイルを配置します
 
     ```
     content
