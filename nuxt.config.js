@@ -98,6 +98,7 @@ export default {
     description: 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
     'og:description': 'かたののblogサイトです。日々の積み上げをアウトプットしていきます。',
     theme_color: '#212121',
-    background_color: '#212121'
+    background_color: '#212121',
+    Meta: apple-mobile-web-app-capable
   },
 }
