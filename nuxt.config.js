@@ -14,7 +14,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      // { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      //PWA
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-title', content: 'かたののblog' },
     ],
     link: [
@@ -74,7 +75,7 @@ export default {
       background_color: '#212121'
     },
     meta: {
-      mobileAppIOS: true 
+      // mobileAppIOS: true 
     }
   },
 
