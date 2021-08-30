@@ -11,12 +11,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+      // { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
       //PWA
       // { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-title', content: 'かたののblog' },
     ],
     link: [
@@ -76,7 +75,10 @@ export default {
       background_color: '#212121'
     },
     meta: {
-      // mobileAppIOS: true 
+      mobileApp: true,
+      viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+      mobileAppIOS: true, 
+      appleStatusBarStyle: 'black',
     }
   },
 
