@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
       //PWA
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      // { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-title', content: 'かたののblog' },
     ],
     link: [
