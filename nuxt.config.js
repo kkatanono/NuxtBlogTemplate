@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      // { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
       //PWA
@@ -76,9 +76,9 @@ export default {
     },
     meta: {
       mobileApp: true,
-      viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
-      mobileAppIOS: true, 
-      appleStatusBarStyle: 'black',
+      // viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+      // mobileAppIOS: true, 
+      // appleStatusBarStyle: 'black',
     }
   },
 
