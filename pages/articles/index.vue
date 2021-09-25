@@ -24,7 +24,9 @@
               </v-list-item>
 
               <v-card-actions>
-                <v-btn outlined rounded text :to="'/articles/' + b.slug">
+                <!-- <v-btn outlined rounded text :to="'/articles/' + b.slug"> -->
+                <!-- <v-btn outlined rounded text :to="b.dir + '/' + b.slug"> -->
+                <v-btn outlined rounded text :to="b.path">
                   Button
                 </v-btn>
               </v-card-actions>
@@ -42,7 +44,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const query = await $content('articles' || 'index').limit(10)
+    // const query = await $content('articles' || 'index',{ deep: true }).limit(10)
+    const query = await $content('nuxt' || 'index',{ deep: true }).limit(10)
     const blogs = await query.fetch()
     return { blogs }
   },
